@@ -10,7 +10,7 @@
   align-items: center;
   gap: 10px;
   width: max-content;
-  max-width: min(780px, calc(100vw - 24px));
+  max-width: min(700px, calc(100vw - 24px));
   padding: 10px 10px 10px 14px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 14px;
