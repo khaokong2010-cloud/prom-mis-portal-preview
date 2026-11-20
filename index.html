@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#123c75">
+<meta name="description" content="ระบบสารสนเทศ โรงเรียนพรหมานุสรณ์จังหวัดเพชรบุรี ศูนย์รวมบริการดิจิทัลสำหรับผู้ดูแลระบบที่ได้รับสิทธิ์">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<title>ระบบสารสนเทศ โรงเรียนพรหมานุสรณ์จังหวัดเพชรบุรี</title>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./style.css">
+<script src="./main.js" defer></script>
+<link rel="stylesheet" href="./preview.css">
+</head>
+<body>
+<a class="skip-link" href="#app">ข้ามไปยังเนื้อหาหลัก</a>
+
+<header class="site-nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" id="brandHome" href="#portal">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">
+        <b>โรงเรียนพรหมานุสรณ์</b>
+        <small>จังหวัดเพชรบุรี · ระบบสารสนเทศ</small>
+      </span>
+    </a>
+    <div class="nav-actions">
+      <a class="nav-link" id="navServices" href="#services">บริการทั้งหมด</a>
+      <a class="nav-link nav-ext" href="https://promma.ac.th/mainpage" target="_blank" rel="noopener">
+        เว็บไซต์โรงเรียน
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4h5v5M16 4l-7 7"/><path d="M15 11v4.5H4.5V5H9"/></svg>
+      </a>
+      <span class="who" id="who"></span>
+      <button class="btn btn-ghost" id="authBtn" type="button">สำหรับผู้ดูแล</button>
+    </div>
+  </div>
+</header>
+
+<main id="app" tabindex="-1">
+  <div class="page" id="portal">
+
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>ระบบสารสนเทศโรงเรียน</span>
+        <h1 id="heroTitle">โรงเรียนพรหมานุสรณ์<span>จังหวัดเพชรบุรี</span></h1>
+        <p class="hero-lead">ศูนย์รวมบริการดิจิทัลของโรงเรียน สำหรับผู้ดูแลระบบที่ได้รับสิทธิ์ เข้าใช้งานได้อย่างสะดวกและปลอดภัย</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#services">
+            <span>ดูบริการทั้งหมด</span>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg>
+          </a>
+          <button class="btn btn-ghost btn-lg" id="heroAuth" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            <span id="heroAuthLabel">สำหรับผู้ดูแล</span>
+          </button>
+        </div>
+        <p class="hero-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          <span>ทุกบริการต้องเข้าสู่ระบบด้วย <b>ชื่อผู้ใช้และรหัสผ่าน</b>ของผู้ดูแล</span>
+        </p>
+      </div>
+
+      <div class="hero-art" aria-label="ตราประจำโรงเรียนและข้อมูลการเข้าใช้งาน">
+        <span class="art-ring" aria-hidden="true"></span>
+        <div class="crest-medallion" role="img" aria-label="ตราประจำโรงเรียนพรหมานุสรณ์จังหวัดเพชรบุรี"></div>
+        <div class="art-chip chip-a">
+          <span class="chip-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.3" fill="currentColor" stroke="none"/></svg></span>
+          <span><small>สำหรับผู้ดูแลระบบ</small><b>เข้าสู่ระบบก่อนใช้งาน</b></span>
+        </div>
+        <div class="art-chip chip-b">
+          <span class="chip-ico pink" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 19 6v5.3c0 4.6-2.9 7.8-7 9.2-4.1-1.4-7-4.6-7-9.2V6z"/><path d="m8.6 12 2.2 2.2 4.6-4.6"/></svg></span>
+          <span><small>บริการจัดการข้อมูล</small><b>สำหรับผู้ดูแลระบบ</b></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise" aria-label="จุดเด่นของระบบ">
+      <div class="promise-inner">
+        <div class="promise-item">
+          <span class="p-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.3" fill="currentColor" stroke="none"/></svg></span>
+          <div class="p-copy"><b>เข้าสู่ระบบก่อนใช้งาน</b><span>ทุกบริการต้องยืนยันตนด้วยชื่อผู้ใช้และรหัสผ่าน</span></div>
+        </div>
+        <div class="promise-item">
+          <span class="p-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 19 6v5.3c0 4.6-2.9 7.8-7 9.2-4.1-1.4-7-4.6-7-9.2V6z"/><path d="m8.6 12 2.2 2.2 4.6-4.6"/></svg></span>
+          <div class="p-copy"><b>จัดการข้อมูลอย่างปลอดภัย</b><span>เฉพาะผู้ดูแลระบบที่ได้รับสิทธิ์เท่านั้น</span></div>
+        </div>
+        <div class="promise-item">
+          <span class="p-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="14" height="10" rx="1.8"/><path d="M6.5 20h6M9.5 14v6"/><rect x="15.5" y="9" width="6" height="9" rx="1.5"/></svg></span>
+          <div class="p-copy"><b>ใช้งานได้ทุกอุปกรณ์</b><span>รองรับคอมพิวเตอร์ แท็บเล็ต และโทรศัพท์</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services" aria-labelledby="servicesTitle">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">บริการของเรา</span>
+          <h2 id="servicesTitle">ระบบงานสำหรับผู้ดูแลระบบ</h2>
+          <p>บริการทั้งหมดต้องเข้าสู่ระบบด้วย <b>ชื่อผู้ใช้และรหัสผ่าน</b>ของผู้ดูแล</p>
+        </div>
+        <span class="count-pill"><b>6</b> บริการ</span>
+      </div>
+      <div class="mgrid" id="mgrid2"></div>
+      <noscript><p class="noscript">กรุณาเปิดใช้งาน JavaScript เพื่อแสดงรายการบริการ</p></noscript>
+      <p class="grid-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+        ทุกบริการสำหรับผู้ดูแลระบบ กรุณาเข้าสู่ระบบก่อนใช้งาน
+      </p>
+    </section>
+
+    <section class="guide" aria-labelledby="guideTitle">
+      <div class="guide-inner">
+        <div class="guide-head">
+          <div>
+            <span class="eyebrow eyebrow-light"><span class="eyebrow-dot" aria-hidden="true"></span>เริ่มต้นใช้งาน</span>
+            <h2 id="guideTitle">เข้าใช้งานได้ง่าย ๆ</h2>
+          </div>
+          <p>เข้าสู่ระบบด้วยชื่อผู้ใช้และรหัสผ่าน แล้วเลือกบริการที่ต้องการ</p>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-no" aria-hidden="true">1</span>
+            <b>เข้าสู่ระบบ</b>
+            <p>กรอกชื่อผู้ใช้และรหัสผ่านเพื่อเข้าใช้งาน</p>
+          </li>
+          <li class="step">
+            <span class="step-no" aria-hidden="true">2</span>
+            <b>เลือกบริการ</b>
+            <p>เลือกงานที่ต้องการจากเมนูบริการทั้ง 6 รายการ</p>
+          </li>
+          <li class="step">
+            <span class="step-no" aria-hidden="true">3</span>
+            <b>เริ่มดำเนินการ</b>
+            <p>บันทึก ประเมิน ค้นหา หรือออกรายงานได้ทันที</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="f-brand">
+          <span class="f-mark" aria-hidden="true"></span>
+          <span>
+            <b>โรงเรียนพรหมานุสรณ์จังหวัดเพชรบุรี</b>
+            <small>ระบบสารสนเทศเพื่อการบริหารจัดการ</small>
+          </span>
+        </div>
+        <div class="f-links">
+          <a href="https://promma.ac.th/mainpage" target="_blank" rel="noopener">
+            เว็บไซต์โรงเรียน
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4h5v5M16 4l-7 7"/><path d="M15 11v4.5H4.5V5H9"/></svg>
+          </a>
+          <a href="#services">บริการทั้งหมด</a>
+          <a href="#portal">
+            กลับขึ้นด้านบน
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 16V4M5 9l5-5 5 5"/></svg>
+          </a>
+        </div>
+        <p class="f-note"><span>© 2569 โรงเรียนพรหมานุสรณ์จังหวัดเพชรบุรี</span><span>สงวนลิขสิทธิ์</span></p>
+      </div>
+    </footer>
+  </div>
+
+  <div class="page hidden" id="evalPage">
+    <div class="top">
+      <button class="back" id="backBtn" type="button">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 10H5M9 5l-5 5 5 5"/></svg>
+        กลับสู่หน้าหลัก
+      </button>
+      <span class="crumb">ระบบสารสนเทศ <span>/</span> แบบประเมินโครงการ</span>
+    </div>
+    <section class="menu" aria-labelledby="evalTitle">
+      <div class="menu-head">
+        <span class="menu-crest" role="img" aria-label="ตราประจำโรงเรียนพรหมานุสรณ์จังหวัดเพชรบุรี"></span>
+        <div>
+          <span class="eyebrow">แบบฟอร์มประเมิน</span>
+          <h1 id="evalTitle">แบบประเมินโครงการ (พบ.แผน-4)</h1>
+          <p>โรงเรียนพรหมานุสรณ์จังหวัดเพชรบุรี</p>
+        </div>
+      </div>
+      <div class="mgrid" id="mgrid"></div>
+      <p class="grid-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+        ทุกบริการต้องเข้าสู่ระบบก่อนใช้งาน
+      </p>
+    </section>
+  </div>
+
+</main>
+
+<div class="ov hidden" id="ov" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+  <div class="auth-card">
+    <aside class="auth-brand">
+      <span class="auth-crest" role="img" aria-label="ตราประจำโรงเรียน"></span>
+      <span class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>ระบบจัดการข้อมูล</span>
+      <h3>สำหรับผู้ดูแลระบบ</h3>
+      <p>เข้าสู่ระบบเพื่อจัดการข้อมูลโครงการของโรงเรียน</p>
+      <ul class="auth-points">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 19 6v5.3c0 4.6-2.9 7.8-7 9.2-4.1-1.4-7-4.6-7-9.2V6z"/><path d="m8.6 12 2.2 2.2 4.6-4.6"/></svg>เข้าใช้งานด้วยชื่อผู้ใช้และรหัสผ่าน</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M4 9h16M8 13h4"/></svg>บันทึก แก้ไข รายงาน และส่งออกข้อมูล</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>ล็อกชั่วคราวเมื่อกรอกผิด 5 ครั้ง</li>
+      </ul>
+      <span class="auth-brand-foot">โรงเรียนพรหมานุสรณ์จังหวัดเพชรบุรี</span>
+    </aside>
+    <section class="auth-main">
+      <button class="lclose" id="cancel" type="button" aria-label="ปิดหน้าต่างเข้าสู่ระบบ">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+      <span class="auth-mobile-crest" role="img" aria-label="ตราประจำโรงเรียน"></span>
+      <span class="eyebrow">สำหรับผู้ดูแลระบบ</span>
+      <h2 id="authTitle">เข้าสู่ระบบ</h2>
+      <p>กรอกชื่อผู้ใช้และรหัสผ่านเพื่อเข้าใช้งานบริการทั้งหมด</p>
+      <form class="auth-form" id="loginForm" novalidate>
+        <div class="field">
+          <label class="field-label" for="username">ชื่อผู้ใช้งาน</label>
+          <span class="input-wrap">
+            <svg class="in-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c.7-4.2 3.5-6.5 7.5-6.5s6.8 2.3 7.5 6.5"/></svg>
+            <input id="username" name="username" type="text" autocomplete="username" placeholder="กรอกชื่อผู้ใช้งาน" required>
+          </span>
+        </div>
+        <div class="field">
+          <label class="field-label" for="password">รหัสผ่าน</label>
+          <span class="input-wrap">
+            <svg class="in-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.3" fill="currentColor" stroke="none"/></svg>
+            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="กรอกรหัสผ่าน" required>
+            <button class="pw-toggle" id="pwToggle" type="button" aria-label="แสดงรหัสผ่าน" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </span>
+        </div>
+        <div class="err" id="err" role="alert" aria-live="assertive"></div>
+        <button class="auth-submit" id="loginBtn" type="submit">
+          <span>เข้าสู่ระบบ</span>
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg>
+        </button>
+        <div class="lock-note" id="lockNote">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 19 6v5.3c0 4.6-2.9 7.8-7 9.2-4.1-1.4-7-4.6-7-9.2V6z"/><path d="m8.6 12 2.2 2.2 4.6-4.6"/></svg>
+          <span id="lockText">กรอกผิด 5 ครั้ง ระบบจะล็อก 5 นาที</span>
+        </div>
+      </form>
+      <p class="auth-help">หากไม่สามารถเข้าใช้งานได้ กรุณาติดต่อผู้ดูแลระบบของโรงเรียน</p>
+    </section>
+  </div>
+</div>
+
+<div class="preview-banner" id="previewBanner" role="note">
+  <span class="preview-dot" aria-hidden="true"></span>
+  <span class="preview-text"><b>ตัวอย่างการออกแบบบน GitHub Pages</b> — การเข้าสู่ระบบใช้ได้เฉพาะเวอร์ชันเซิร์ฟเวอร์ความปลอดภัยในเครื่อง</span>
+  <button class="preview-close" id="previewClose" type="button" aria-label="ปิดประกาศ">&times;</button>
+</div>
+<script src="./preview.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* GitHub Pages preview notice — not part of the secure portal build. */
+
+.preview-banner {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: max-content;
+  max-width: min(780px, calc(100vw - 24px));
+  padding: 10px 10px 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  background: rgba(9, 30, 58, 0.95);
+  color: #e8f1ff;
+  box-shadow: 0 20px 44px -20px rgba(3, 15, 33, 0.8);
+  backdrop-filter: blur(10px);
+  font-family: "Sarabun", "Prompt", system-ui, sans-serif;
+  font-size: 12.8px;
+  line-height: 1.55;
+}
+
+.preview-banner[hidden] {
+  display: none;
+}
+
+.preview-dot {
+  width: 9px;
+  height: 9px;
+  flex: none;
+  border-radius: 50%;
+  background: #ee6fa7;
+  box-shadow: 0 0 0 4px rgba(238, 111, 167, 0.18);
+}
+
+.preview-text {
+  min-width: 0;
+}
+
+.preview-text b {
+  color: #fff;
+  font-weight: 600;
+}
+
+.preview-close {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  margin-left: 2px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #cfe0f7;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.preview-close:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+.preview-close:focus-visible {
+  outline: 2px solid #ee6fa7;
+  outline-offset: 2px;
+}
+
+.preview-note {
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  border: 1px dashed rgba(29, 92, 174, 0.35);
+  border-radius: 10px;
+  background: rgba(46, 116, 204, 0.06);
+  color: #4a6280;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.preview-note b {
+  color: #123c75;
+}
+
+@media (max-width: 560px) {
+  .preview-banner {
+    bottom: 10px;
+    align-items: flex-start;
+    padding: 10px 8px 10px 12px;
+    font-size: 12px;
+  }
+
+  .preview-dot {
+    margin-top: 5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preview-banner {
+    backdrop-filter: none;
+  }
+}
