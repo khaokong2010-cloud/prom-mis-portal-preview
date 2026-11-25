@@ -1,6 +1,8 @@
 (function () {
   'use strict';
 
+  var LIVE_URL = 'https://school-mis-portal-qvx6x4775pxcx65r-8443.app.github.dev/';
+
   document.body.classList.add('preview-mode');
 
   var banner = document.getElementById('previewBanner');
@@ -16,7 +18,10 @@
   if (authMain && authHelp && !document.querySelector('.preview-note')) {
     var note = document.createElement('p');
     note.className = 'preview-note';
-    note.innerHTML = '<b>โหมดตัวอย่างบน GitHub Pages</b> — หน้านี้แสดงเฉพาะการออกแบบ ไม่มีการส่งข้อมูลหรือตรวจสอบรหัสผ่าน';
+    note.innerHTML =
+      '<b>หน้านี้เป็นตัวอย่างการออกแบบ</b> — ไม่มีการตรวจสอบรหัสผ่าน ' +
+      'หากต้องการเข้าสู่ระบบจริง กรุณาเปิด' +
+      '<a class="preview-link" href="' + LIVE_URL + '" target="_blank" rel="noopener">พอร์ทัลสาธารณะ</a>';
     authMain.insertBefore(note, authHelp);
   }
 
@@ -28,7 +33,9 @@
 
     var error = document.getElementById('err');
     if (error) {
-      error.textContent = 'หน้านี้เป็นตัวอย่างการออกแบบบน GitHub Pages — การเข้าสู่ระบบใช้งานได้เฉพาะเวอร์ชันเซิร์ฟเวอร์ความปลอดภัยในเครื่อง';
+      error.innerHTML =
+        'หน้านี้เป็นตัวอย่างการออกแบบ — กรุณาเข้าสู่ระบบที่' +
+        '<a class="preview-link" href="' + LIVE_URL + '" target="_blank" rel="noopener">พอร์ทัลสาธารณะ</a>';
     }
 
     var password = document.getElementById('password');
